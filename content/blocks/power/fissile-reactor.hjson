@@ -1,0 +1,51 @@
+type: ConsumeGenerator
+size: 2
+name: "Fissile Reactor"
+planet: erekir
+powerProduction: 5
+itemDuration: 1000
+envEnabled: -1
+generateEffect: generatespark
+drawer: {
+	type: DrawMulti
+	drawers: [
+		DrawDefault
+		DrawWarmupRegion
+	]
+}
+consumes: {
+  itemRadioactive: { amount: 1 }
+}
+itemCapacity: 5
+requirements: [
+  beryllium/50
+  graphite/30
+  silicon/10
+]
+category: power
+research: turbine-condensertype: ConsumeGenerator
+size: 2
+name: "Fissile Reactor"
+planet: erekir
+powerProduction: 5
+itemDuration: 1000
+envEnabled: -1
+generateEffect: generatespark
+drawer: {
+	type: DrawMulti
+	drawers: [
+		DrawDefault
+		DrawWarmupRegion
+	]
+}
+consumes: {
+  itemRadioactive: { amount: 1 }
+}
+itemCapacity: 5
+requirements: [
+  beryllium/50
+  graphite/30
+  silicon/10
+]
+category: power
+research: turbine-condenser
