@@ -1,0 +1,54 @@
+type: ItemTurret
+size: 4
+range: 800
+name: "BFG 1K"
+description: "A man-made weapon transported from Earth To Erekir. Snipes unit and building that has the highest health."
+ammoTypes: {
+	"unt-armor-point": {
+		type: PointBulletType
+		hitEffect: blastExplosion
+		smokeEffect: smokeCloud
+		despawnEffect: blastExplosion
+		// alternatives: ballfire, fireSmoke, shootHealYellow
+		trailEffect: railTrail
+		trailColor: "ff0000" // doesn't work?
+		trailInterval: 15
+		damage: 600
+		buildingDamageMultiplier: 1
+		speed: 350
+		hitShake: 1
+		ammoMultiplier: 2
+	}
+}
+// bfgbfg
+shoot: {
+	type: ShootBarrel
+	barrels: [0, 16, 0]
+}
+maxAmmo: 10
+rotateSpeed: 1
+reload: 1000
+ammoUseEffect: casing1
+recoil: 1
+cooldownTime: 150
+shake: 3
+shootCone: 2
+shootSound: railgun
+unitSort: strongest
+envEnabled: -1
+coolantMultiplier: 3.5
+scaledHealth: 500
+consumes: {
+	coolant: { amount: 0.1 }
+	power: 4
+}
+requirements: [
+  beryllium/2000
+  graphite/1800
+  silicon/1500
+  tungsten/1200
+  unt-chip/1000
+  unt-cookie/500
+]
+category: turret
+research: notarc

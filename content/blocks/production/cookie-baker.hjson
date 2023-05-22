@@ -1,0 +1,42 @@
+type: GenericCrafter
+size: 2
+name: "Router Unit Material Researcher I"
+description: "Produces Cookies using chips and graphite, used to create ROUTER units."
+drawer: {
+  type: DrawMulti
+  drawers: [
+    DrawDefault
+    {
+      type: DrawFlame
+      lightRadius: 40
+      flameRadius: 1.5
+      flameRadiusIn: 0.9
+      flameRadiusMag: 1
+      flameRadiusInMag: 0.5
+    }
+  ]
+}
+hasPower: true
+hasItems: true
+health: 800
+ambientSound: techloop
+ambientSoundVolume: 0.01
+itemCapacity: 30
+craftTime: 150
+requirements: [
+  beryllium/50
+  graphite/30
+  silicon/20
+]
+consumes: {
+  power: 0.4
+  items: {
+    items: [
+      unt-chip/3
+	  graphite/1
+    ]
+  }
+}
+outputItem: unt-cookie/1
+category: crafting
+research: plasma-bore

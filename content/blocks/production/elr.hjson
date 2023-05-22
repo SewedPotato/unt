@@ -1,0 +1,44 @@
+type: GenericCrafter
+size: 3
+name: "Erekir Core Researchment Lab"
+description: "Produces Fissile Matter using basic resources."
+drawer: {
+	type: DrawMulti,
+        drawers: [
+      {
+        type: DrawDefault
+        },
+     {
+ type: DrawBlurSpin
+ suffix: -spin
+ blurThresh: 0.01
+  color: 9cb0e6
+  }
+ ]
+}
+hasPower: true
+hasItems: true
+health: 800
+ambientSound: techloop
+ambientSoundVolume: 0.01
+itemCapacity: 30
+craftTime: 150
+requirements: [
+  beryllium/50
+  graphite/30
+  silicon/20
+  unt-chip/30
+]
+consumes: {
+  power: 1
+  items: {
+    items: [
+      unt-chip/3
+	  unt-cookie/3
+	  unt-armor-point/2
+    ]
+  }
+}
+outputItem: fissile-matter/1
+category: crafting
+research: core-bastion

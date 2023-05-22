@@ -1,0 +1,44 @@
+type: ItemTurret
+size: 1
+range: 250
+name: "Chipped"
+description: "Fires fast expired chips at enemies."
+details: "This turret travelled 450 metres from Serpulo to Erekir, verified as a Erekir Turret. Scientists say to complete challenges to get a Serpulo Turret."
+ammoTypes: {
+	"unt-chip": {
+		type: BasicBulletType
+		speed: 8
+		damage: 30
+		hitSize: 2.5
+		width: 8
+		height: 12
+		shootEffect: shootSmall
+		ammoMultiplier: 10
+		pierceCap: 2
+		pierceBuilding: true
+		knockback: 0.07
+	}
+}
+reload: 5
+recoil: 0.3
+recoilTime: 15
+coolantMultiplier: 2
+inaccuracy: 2
+consumes: {
+	coolant: { amount: 0.1 }
+}
+shoot: {
+	type: ShootAlternate
+	spread: 2
+}
+shootCone: 24
+shake: 0.15
+shootSound: notarcbruh
+requirements: [
+	beryllium/50
+	graphite/30
+	unt-chip/5
+]
+scaledHealth: 500
+category: turret
+research: breach

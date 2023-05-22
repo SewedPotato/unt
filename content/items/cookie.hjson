@@ -1,0 +1,8 @@
+name: "Cookie"
+description: "A mysterious magic item to avoke Router."
+color: "#765682"
+radioactivity: 0.0
+explosiveness: 0.65
+flammability: 0.8
+hardness: 0.97
+research: unt-chip

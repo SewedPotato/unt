@@ -1,0 +1,8 @@
+name: "Armor Point"
+description: "Product used to research and make enchanced walls."
+color: "#765682"
+radioactivity: 0.0
+explosiveness: 0.65
+flammability: 0
+hardness: 2
+research: unt-chip

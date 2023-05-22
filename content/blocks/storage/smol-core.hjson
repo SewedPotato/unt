@@ -1,0 +1,16 @@
+type: CoreBlock
+name: "Core: Tiny Fort"
+description: "A very small core that holds low batch items, but more health."
+details: "A special iteration of Core: Bastion."
+size: 1
+health: 20000
+itemCapacity: 1500
+unitType: evoke
+unitCapModifier: 15
+requirements: [
+	beryllium/2000
+	graphite/2000
+	silicon/5000
+]
+category: effect
+research: core-bastion

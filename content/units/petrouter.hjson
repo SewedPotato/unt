@@ -1,0 +1,29 @@
+type: flying
+name: "Router Pet"
+description: "Heals nearby units at fast rate. Almost immortal."
+details: "router"
+speed: 3
+accel: 0.125
+drag: 0.0625
+mineSpeed: 5
+mineTier: 3
+health: 800
+itemCapacity: 50
+rotateSpeed: 2.375
+hitSize: 18
+isCounted: false
+armor: 50000000
+buildSpeed: 2
+rotateShooting: true
+commandLimit: 12
+engineOffset: 8
+flying: false
+
+abilities: [
+    {
+        type: RepairFieldAbility
+        amount: 100
+        reload: 30
+        range: 250
+    }
+]

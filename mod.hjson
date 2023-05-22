@@ -1,0 +1,9 @@
+name: unt
+displayName: unt
+author: TKW
+description:
+  '''
+  Makes The Erekir Planet Better by adding cursed things. Does not add new sectors to avoid planet brok. Enchance your Erekir with new n' better turrets.
+  '''
+version: 1.0.0
+minGameVersion: 142

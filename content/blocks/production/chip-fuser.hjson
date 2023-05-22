@@ -1,0 +1,40 @@
+type: GenericCrafter
+size: 2
+name: "Chip Weaver"
+description: "Cultivates chip from beryllium."
+drawer: {
+  type: DrawMulti
+  drawers: [
+    DrawDefault
+    {
+      type: DrawFlame
+      lightRadius: 40
+      flameRadius: 1.5
+      flameRadiusIn: 0.9
+      flameRadiusMag: 1
+      flameRadiusInMag: 0.5
+    }
+  ]
+}
+hasPower: true
+hasItems: true
+health: 800
+ambientSound: techloop
+ambientSoundVolume: 0.01
+itemCapacity: 30
+craftTime: 150
+requirements: [
+  beryllium/100
+  graphite/80
+]
+consumes: {
+  power: 0.8
+  items: {
+    items: [
+      beryllium/10
+    ]
+  }
+}
+outputItem: unt-chip/1
+category: crafting
+research: plasma-bore

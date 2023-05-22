@@ -1,0 +1,42 @@
+type: GenericCrafter
+size: 3
+name: "Chip Reprocessor"
+description: "Cultivates armor points from chips and tungstens."
+drawer: {
+  type: DrawMulti
+  drawers: [
+    DrawDefault
+    {
+      type: DrawFlame
+      lightRadius: 40
+      flameRadius: 1.5
+      flameRadiusIn: 0.9
+      flameRadiusMag: 1
+      flameRadiusInMag: 0.5
+    }
+  ]
+}
+hasPower: true
+hasItems: true
+health: 800
+ambientSound: techloop
+ambientSoundVolume: 0.01
+itemCapacity: 30
+craftTime: 280
+requirements: [
+  beryllium/100
+  graphite/80
+  tungsten/35
+]
+consumes: {
+  power: 1
+  items: {
+    items: [
+      tungsten/5
+	  unt-chip/5
+    ]
+  }
+}
+outputItem: unt-armor-point/1
+category: crafting
+research: unt-chip-fuser

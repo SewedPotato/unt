@@ -1,0 +1,27 @@
+type: radar
+planet: erekir
+name: "Military Radar"
+description: "Lights up dark areas."
+outlineColor: 4a4b53
+fogRadius: 40
+envEnabled: 17
+health: 650
+envDisabled: 0
+consumes:{
+    power: 1.5
+}
+requirements: [
+    silicon/70
+    graphite/45
+    unt-chip/25
+]
+category: effect
+buildVisibility: fogOnly
+research:{
+    parent: radar
+    requirements: [
+silicon/70
+graphite/45
+unt-chip/25
+]
+}
