@@ -9,5 +9,5 @@ Adds 😤
 Later 🙂👍😮
 - Fissile Matter Lab - converts thorium into Fissile Matter
 
-Support
+Support 🤑💰 (lol)
 - Support Me at patreon.com/user?u=93812024 if you want. 
