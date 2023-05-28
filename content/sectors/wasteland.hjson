@@ -1,0 +1,15 @@
+planet: mikram
+captureWave: 31
+name: "Nuclear Wasteland"
+descriptions: "The origin of Arkycite. This is the power facility in which they were produced as a toxic liquid. Research the technology contained within. Cultivate Alien Materials for the production of G. Upon this facility's demise, the spores were released. Nothing in the local ecosystem could compete with such an invasive organism."
+sector: 0
+difficulty: 2
+research: {
+parent: unt-smol-core
+objectives: [
+    {
+      type: SectorComplete
+      preset: groundZero
+    }
+  ]
+}

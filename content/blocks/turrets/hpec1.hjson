@@ -1,0 +1,50 @@
+type: ItemTurret
+size: 2
+range: 500
+name: "HPEC Targeter"
+description: "A heavy turret that targets enemies and shoots at it."
+details: "Launched From Earth. Made by HPEC."
+ammoTypes: {
+	"thorium": {
+		type: PointBulletType
+		hitEffect: blastExplosion
+		smokeEffect: smokeCloud
+		despawnEffect: blastExplosion
+		// alternatives: ballfire, fireSmoke, shootHealYellow
+		trailEffect: railTrail
+		trailColor: "ff0000" // doesn't work?
+		trailInterval: 15
+		damage: 50
+		status: blasted
+		buildingDamageMultiplier: 1
+		speed: 350
+		hitShake: 1
+		ammoMultiplier: 2
+	}
+}
+// bfgbfg
+shoot: {
+	type: ShootBarrel
+	barrels: [0, 16, 0]
+}
+maxAmmo: 10
+rotateSpeed: 4
+reload: 20
+ammoUseEffect: casing1
+recoil: 1
+cooldownTime: 150
+shake: 0.25
+shootCone: 2
+shootSound: hpec-gun
+unitSort: strongest
+envEnabled: -1
+coolantMultiplier: 3
+health: 1200
+consumes: {
+	coolant: { amount: 0.1 }
+}
+requirements: [
+  thorium/35
+]
+category: turret
+research: unt-smol-core

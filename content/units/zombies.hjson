@@ -1,0 +1,52 @@
+type: hover
+health: 700
+name: "Medium-size Alien"
+description: "A non-humanity creature that fires blood and melts it down. Can be healed by feeding them with arkycite puddles."
+shadowElevation: 0.2
+drag: 0.07
+lowAltitude: false
+speed: 2
+rotateSpeed: 5
+hitSize: 8
+useEngineElevation: false
+abilities: [
+  {
+   type: MoveEffectAbility
+   teamColor: true
+  },
+  {
+   type: LiquidRegenAbility
+   liquid: arkycite
+   slurpSpeed: 2
+   regenPerSlurp: 1
+   slurpEffectChance: 0.4
+   slurpEffect: heal
+  }
+]
+weapons: [
+  {
+    name: none
+    x: 0
+    y: 0
+    mirror: false
+    shootEffect: sparkShoot
+    smokeEffect: shootSmallSmoke
+    reload: 25
+    inaccuracy: 40
+    bullet: {
+      type: MissileBulletType
+      damage: 10
+      splashDamage: 2
+      splashDamageRadius: 16
+      sideAngle: 45
+      sideWidth: 4
+      sideLength: 4
+      hitEffect: blastExplosion
+      trailLength: 15
+      homingRange: 70
+      despawnEffect: blastExplosion
+      lifeTime: 150
+      shootSound: notarcbruh
+    }
+  }
+]

@@ -1,16 +1,15 @@
 type: CoreBlock
-name: "Core: Tiny Fort"
-description: "A very small core that holds low batch items, but more health."
-details: "A special iteration of Core: Bastion."
+name: "Pad: Antonic"
+description: "Holds 1500 items, only usable in planet Mikram."
+details: "First pad designed for Mikram."
 size: 1
-health: 20000
+planet: mikram
+health: 1000
 itemCapacity: 1500
 unitType: evoke
 unitCapModifier: 15
 requirements: [
-	beryllium/2000
-	graphite/2000
-	silicon/5000
+	thorium/300
 ]
 category: effect
 research: core-bastion
